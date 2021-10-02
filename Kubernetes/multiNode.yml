@@ -1,0 +1,23 @@
+---
+- name: Configuring Master
+  hosts: kube_master
+  become_user: root
+  become: yes
+  roles:
+        - role: k8s_master
+          owner: ubuntu
+          group: ubuntu
+
+- name: Configuring Slave
+  become_user: root
+  become: yes
+  hosts: kube_slave
+  vars_prompt:
+          - name: kube_join_command
+            prompt: Enter the token to join the kubernetes cluster 
+            private: no
+  roles:
+        - role: k8s_slave
+  
+
+

@@ -1,0 +1,339 @@
+2021-07-01 15:58:45,321 p=944 u=root n=ansible | PLAY [Configuring Master] ******************************************************
+2021-07-01 15:58:45,374 p=944 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2021-07-01 15:58:48,183 p=944 u=root n=ansible | ok: [54.209.13.32]
+2021-07-01 15:58:48,192 p=944 u=root n=ansible | TASK [k8s_master : Install docker] *********************************************
+2021-07-01 15:58:48,278 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:48,287 p=944 u=root n=ansible | TASK [k8s_master : Update docker driver to systemd] ****************************
+2021-07-01 15:58:48,333 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:48,341 p=944 u=root n=ansible | TASK [k8s_master : Start and Enable docker] ************************************
+2021-07-01 15:58:48,387 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:48,396 p=944 u=root n=ansible | TASK [k8s_master : Configure yum for kubernetes on Amazon Linux2] **************
+2021-07-01 15:58:48,441 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:48,449 p=944 u=root n=ansible | TASK [k8s_master : Install kubelet, kubeadm and kubectl packages] **************
+2021-07-01 15:58:48,494 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:48,503 p=944 u=root n=ansible | TASK [k8s_master : Enable kubelet] *********************************************
+2021-07-01 15:58:48,549 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:48,558 p=944 u=root n=ansible | TASK [k8s_master : Pull the kubernetes service images - kubeadm] ***************
+2021-07-01 15:58:48,606 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:48,614 p=944 u=root n=ansible | TASK [k8s_master : Install iproute-tc package] *********************************
+2021-07-01 15:58:48,661 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:48,669 p=944 u=root n=ansible | TASK [k8s_master : Edit /etc/sysctl.conf file] *********************************
+2021-07-01 15:58:48,720 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:48,729 p=944 u=root n=ansible | TASK [k8s_master : Initialize the Kubernetes Master - kubeadm init] ************
+2021-07-01 15:58:48,776 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:48,784 p=944 u=root n=ansible | TASK [k8s_master : Create /.kube directory] ************************************
+2021-07-01 15:58:48,830 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:48,838 p=944 u=root n=ansible | TASK [k8s_master : Copy kubernetes admin.conf file to /.kube/] *****************
+2021-07-01 15:58:48,883 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:48,892 p=944 u=root n=ansible | TASK [k8s_master : Change ownership of /.kube/config] **************************
+2021-07-01 15:58:48,937 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:48,946 p=944 u=root n=ansible | TASK [k8s_master : Applying AddOns] ********************************************
+2021-07-01 15:58:48,993 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,001 p=944 u=root n=ansible | TASK [k8s_master : Create a token to join the slave nodes] *********************
+2021-07-01 15:58:49,047 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,056 p=944 u=root n=ansible | TASK [k8s_master : Print the command to join the slave nodes] ******************
+2021-07-01 15:58:49,103 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,111 p=944 u=root n=ansible | TASK [k8s_master : Configure yum for docker] ***********************************
+2021-07-01 15:58:49,158 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,167 p=944 u=root n=ansible | TASK [k8s_master : Install docker on RedHat] ***********************************
+2021-07-01 15:58:49,213 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,222 p=944 u=root n=ansible | TASK [k8s_master : Install Python] *********************************************
+2021-07-01 15:58:49,269 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,277 p=944 u=root n=ansible | TASK [k8s_master : Install Docker sdk for python] ******************************
+2021-07-01 15:58:49,324 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,331 p=944 u=root n=ansible | TASK [k8s_master : Create /etc/docker directory] *******************************
+2021-07-01 15:58:49,379 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,387 p=944 u=root n=ansible | TASK [k8s_master : Update docker driver to systemd] ****************************
+2021-07-01 15:58:49,434 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,442 p=944 u=root n=ansible | TASK [k8s_master : Start and Enable docker] ************************************
+2021-07-01 15:58:49,490 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,498 p=944 u=root n=ansible | TASK [k8s_master : Configure yum for kubernetes on RedHat] *********************
+2021-07-01 15:58:49,547 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,554 p=944 u=root n=ansible | TASK [k8s_master : Install kubelet, kubeadm and kubectl packages] **************
+2021-07-01 15:58:49,601 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,610 p=944 u=root n=ansible | TASK [k8s_master : Enable kubelet] *********************************************
+2021-07-01 15:58:49,656 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,664 p=944 u=root n=ansible | TASK [k8s_master : Pull the kubernetes service images - kubeadm] ***************
+2021-07-01 15:58:49,710 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,718 p=944 u=root n=ansible | TASK [k8s_master : Install iproute-tc package] *********************************
+2021-07-01 15:58:49,766 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,773 p=944 u=root n=ansible | TASK [k8s_master : Initialize the Kubernetes Master - kubeadm init] ************
+2021-07-01 15:58:49,821 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,829 p=944 u=root n=ansible | TASK [k8s_master : Create /.kube directory] ************************************
+2021-07-01 15:58:49,877 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,885 p=944 u=root n=ansible | TASK [k8s_master : Copy kubernetes admin.conf file to /.kube/] *****************
+2021-07-01 15:58:49,933 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,941 p=944 u=root n=ansible | TASK [k8s_master : Change ownership of /.kube/config] **************************
+2021-07-01 15:58:49,988 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:49,995 p=944 u=root n=ansible | TASK [k8s_master : Applying AddOns] ********************************************
+2021-07-01 15:58:50,042 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:50,050 p=944 u=root n=ansible | TASK [k8s_master : Create a token to join the slave nodes] *********************
+2021-07-01 15:58:50,096 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:50,104 p=944 u=root n=ansible | TASK [k8s_master : Print the command to join the slave nodes] ******************
+2021-07-01 15:58:50,152 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:58:50,161 p=944 u=root n=ansible | TASK [k8s_master : Add an apt signing key for Docker] **************************
+2021-07-01 15:58:51,353 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 15:58:51,363 p=944 u=root n=ansible | TASK [k8s_master : Add apt repository for stable version of Docker] ************
+2021-07-01 15:59:01,809 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 15:59:01,818 p=944 u=root n=ansible | TASK [k8s_master : Install docker and its dependecies] *************************
+2021-07-01 15:59:31,716 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 15:59:31,725 p=944 u=root n=ansible | TASK [k8s_master : Changing Docker Driver to systemd] **************************
+2021-07-01 15:59:32,555 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 15:59:32,564 p=944 u=root n=ansible | TASK [k8s_master : Remove swapfile from /etc/fstab] ****************************
+2021-07-01 15:59:33,036 p=944 u=root n=ansible | ok: [54.209.13.32] => (item=swap)
+2021-07-01 15:59:33,301 p=944 u=root n=ansible | ok: [54.209.13.32] => (item=none)
+2021-07-01 15:59:33,311 p=944 u=root n=ansible | TASK [k8s_master : Disable swap] ***********************************************
+2021-07-01 15:59:33,360 p=944 u=root n=ansible | skipping: [54.209.13.32]
+2021-07-01 15:59:33,368 p=944 u=root n=ansible | TASK [k8s_master : Add an apt signing key for Kubernetes] **********************
+2021-07-01 15:59:34,480 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 15:59:34,488 p=944 u=root n=ansible | TASK [k8s_master : Adding apt repository for Kubernetes] ***********************
+2021-07-01 15:59:41,987 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 15:59:41,995 p=944 u=root n=ansible | TASK [k8s_master : Install Kubernetes binaries] ********************************
+2021-07-01 16:00:01,062 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 16:00:01,071 p=944 u=root n=ansible | TASK [k8s_master : Adding Kubernetes Bridges] **********************************
+2021-07-01 16:00:01,749 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 16:00:01,758 p=944 u=root n=ansible | TASK [k8s_master : Starting Systemctl Services] ********************************
+2021-07-01 16:00:02,904 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 16:00:02,934 p=944 u=root n=ansible | TASK [k8s_master : Starting Docker Services] ***********************************
+2021-07-01 16:00:05,000 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 16:00:05,010 p=944 u=root n=ansible | TASK [k8s_master : Enable kubelet] *********************************************
+2021-07-01 16:00:05,488 p=944 u=root n=ansible | ok: [54.209.13.32]
+2021-07-01 16:00:05,497 p=944 u=root n=ansible | TASK [k8s_master : Pull the kubernetes service images - kubeadm] ***************
+2021-07-01 16:00:23,411 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 16:00:23,420 p=944 u=root n=ansible | TASK [k8s_master : Initialize the Kubernetes Master - kubeadm init] ************
+2021-07-01 16:00:42,021 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 16:00:42,030 p=944 u=root n=ansible | TASK [k8s_master : Create /.kube directory] ************************************
+2021-07-01 16:00:42,624 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 16:00:42,633 p=944 u=root n=ansible | TASK [k8s_master : Copy kubernetes admin.conf file to /.kube/] *****************
+2021-07-01 16:00:43,069 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 16:00:43,077 p=944 u=root n=ansible | TASK [k8s_master : Change ownership of /.kube/config] **************************
+2021-07-01 16:00:43,434 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 16:00:43,443 p=944 u=root n=ansible | TASK [k8s_master : Applying AddOns] ********************************************
+2021-07-01 16:00:44,824 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 16:00:44,832 p=944 u=root n=ansible | TASK [k8s_master : Create a token to join the slave nodes] *********************
+2021-07-01 16:00:45,244 p=944 u=root n=ansible | changed: [54.209.13.32]
+2021-07-01 16:00:45,253 p=944 u=root n=ansible | TASK [k8s_master : Print the command to join the slave nodes] ******************
+2021-07-01 16:00:45,305 p=944 u=root n=ansible | ok: [54.209.13.32] => {
+    "join_command.stdout_lines": [
+        "kubeadm join 172.31.18.51:6443 --token 1wttpm.1axr9mbsjbejeo1r --discovery-token-ca-cert-hash sha256:c98d8dd37e84e4a7691986aa70b26901c9118da48d797e12b86d7851ea0502c8 "
+    ]
+}
+2021-07-01 16:15:59,841 p=1398 u=root n=ansible | 54.196.185.119 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-07-01 16:16:00,169 p=1398 u=root n=ansible | 100.24.38.7 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-07-01 16:16:06,243 p=1435 u=root n=ansible | PLAY [Configuring Master] ******************************************************
+2021-07-01 16:16:06,271 p=1435 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2021-07-01 16:16:07,732 p=1435 u=root n=ansible | ok: [100.24.38.7]
+2021-07-01 16:16:07,741 p=1435 u=root n=ansible | TASK [k8s_master : Install docker] *********************************************
+2021-07-01 16:16:07,788 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:07,798 p=1435 u=root n=ansible | TASK [k8s_master : Update docker driver to systemd] ****************************
+2021-07-01 16:16:07,845 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:07,854 p=1435 u=root n=ansible | TASK [k8s_master : Start and Enable docker] ************************************
+2021-07-01 16:16:07,902 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:07,910 p=1435 u=root n=ansible | TASK [k8s_master : Configure yum for kubernetes on Amazon Linux2] **************
+2021-07-01 16:16:07,958 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:07,966 p=1435 u=root n=ansible | TASK [k8s_master : Install kubelet, kubeadm and kubectl packages] **************
+2021-07-01 16:16:08,012 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,021 p=1435 u=root n=ansible | TASK [k8s_master : Enable kubelet] *********************************************
+2021-07-01 16:16:08,067 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,076 p=1435 u=root n=ansible | TASK [k8s_master : Pull the kubernetes service images - kubeadm] ***************
+2021-07-01 16:16:08,123 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,132 p=1435 u=root n=ansible | TASK [k8s_master : Install iproute-tc package] *********************************
+2021-07-01 16:16:08,178 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,187 p=1435 u=root n=ansible | TASK [k8s_master : Edit /etc/sysctl.conf file] *********************************
+2021-07-01 16:16:08,235 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,243 p=1435 u=root n=ansible | TASK [k8s_master : Initialize the Kubernetes Master - kubeadm init] ************
+2021-07-01 16:16:08,290 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,298 p=1435 u=root n=ansible | TASK [k8s_master : Create /.kube directory] ************************************
+2021-07-01 16:16:08,347 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,354 p=1435 u=root n=ansible | TASK [k8s_master : Copy kubernetes admin.conf file to /.kube/] *****************
+2021-07-01 16:16:08,400 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,408 p=1435 u=root n=ansible | TASK [k8s_master : Change ownership of /.kube/config] **************************
+2021-07-01 16:16:08,455 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,463 p=1435 u=root n=ansible | TASK [k8s_master : Applying AddOns] ********************************************
+2021-07-01 16:16:08,510 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,518 p=1435 u=root n=ansible | TASK [k8s_master : Create a token to join the slave nodes] *********************
+2021-07-01 16:16:08,566 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,574 p=1435 u=root n=ansible | TASK [k8s_master : Print the command to join the slave nodes] ******************
+2021-07-01 16:16:08,622 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,631 p=1435 u=root n=ansible | TASK [k8s_master : Configure yum for docker] ***********************************
+2021-07-01 16:16:08,680 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,689 p=1435 u=root n=ansible | TASK [k8s_master : Install docker on RedHat] ***********************************
+2021-07-01 16:16:08,736 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,744 p=1435 u=root n=ansible | TASK [k8s_master : Install Python] *********************************************
+2021-07-01 16:16:08,792 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,800 p=1435 u=root n=ansible | TASK [k8s_master : Install Docker sdk for python] ******************************
+2021-07-01 16:16:08,847 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,856 p=1435 u=root n=ansible | TASK [k8s_master : Create /etc/docker directory] *******************************
+2021-07-01 16:16:08,902 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,911 p=1435 u=root n=ansible | TASK [k8s_master : Update docker driver to systemd] ****************************
+2021-07-01 16:16:08,959 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:08,968 p=1435 u=root n=ansible | TASK [k8s_master : Start and Enable docker] ************************************
+2021-07-01 16:16:09,015 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:09,024 p=1435 u=root n=ansible | TASK [k8s_master : Configure yum for kubernetes on RedHat] *********************
+2021-07-01 16:16:09,073 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:09,083 p=1435 u=root n=ansible | TASK [k8s_master : Install kubelet, kubeadm and kubectl packages] **************
+2021-07-01 16:16:09,131 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:09,140 p=1435 u=root n=ansible | TASK [k8s_master : Enable kubelet] *********************************************
+2021-07-01 16:16:09,187 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:09,195 p=1435 u=root n=ansible | TASK [k8s_master : Pull the kubernetes service images - kubeadm] ***************
+2021-07-01 16:16:09,243 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:09,251 p=1435 u=root n=ansible | TASK [k8s_master : Install iproute-tc package] *********************************
+2021-07-01 16:16:09,297 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:09,306 p=1435 u=root n=ansible | TASK [k8s_master : Initialize the Kubernetes Master - kubeadm init] ************
+2021-07-01 16:16:09,354 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:09,362 p=1435 u=root n=ansible | TASK [k8s_master : Create /.kube directory] ************************************
+2021-07-01 16:16:09,411 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:09,419 p=1435 u=root n=ansible | TASK [k8s_master : Copy kubernetes admin.conf file to /.kube/] *****************
+2021-07-01 16:16:09,466 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:09,477 p=1435 u=root n=ansible | TASK [k8s_master : Change ownership of /.kube/config] **************************
+2021-07-01 16:16:09,524 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:09,533 p=1435 u=root n=ansible | TASK [k8s_master : Applying AddOns] ********************************************
+2021-07-01 16:16:09,580 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:09,589 p=1435 u=root n=ansible | TASK [k8s_master : Create a token to join the slave nodes] *********************
+2021-07-01 16:16:09,636 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:09,644 p=1435 u=root n=ansible | TASK [k8s_master : Print the command to join the slave nodes] ******************
+2021-07-01 16:16:09,692 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:09,701 p=1435 u=root n=ansible | TASK [k8s_master : Add an apt signing key for Docker] **************************
+2021-07-01 16:16:10,878 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:16:10,887 p=1435 u=root n=ansible | TASK [k8s_master : Add apt repository for stable version of Docker] ************
+2021-07-01 16:16:21,169 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:16:21,179 p=1435 u=root n=ansible | TASK [k8s_master : Install docker and its dependecies] *************************
+2021-07-01 16:16:51,010 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:16:51,019 p=1435 u=root n=ansible | TASK [k8s_master : Changing Docker Driver to systemd] **************************
+2021-07-01 16:16:51,850 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:16:51,859 p=1435 u=root n=ansible | TASK [k8s_master : Remove swapfile from /etc/fstab] ****************************
+2021-07-01 16:16:52,330 p=1435 u=root n=ansible | ok: [100.24.38.7] => (item=swap)
+2021-07-01 16:16:52,595 p=1435 u=root n=ansible | ok: [100.24.38.7] => (item=none)
+2021-07-01 16:16:52,605 p=1435 u=root n=ansible | TASK [k8s_master : Disable swap] ***********************************************
+2021-07-01 16:16:52,652 p=1435 u=root n=ansible | skipping: [100.24.38.7]
+2021-07-01 16:16:52,661 p=1435 u=root n=ansible | TASK [k8s_master : Add an apt signing key for Kubernetes] **********************
+2021-07-01 16:16:53,796 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:16:53,804 p=1435 u=root n=ansible | TASK [k8s_master : Adding apt repository for Kubernetes] ***********************
+2021-07-01 16:17:01,514 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:17:01,522 p=1435 u=root n=ansible | TASK [k8s_master : Install Kubernetes binaries] ********************************
+2021-07-01 16:17:20,234 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:17:20,243 p=1435 u=root n=ansible | TASK [k8s_master : Adding Kubernetes Bridges] **********************************
+2021-07-01 16:17:20,816 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:17:20,825 p=1435 u=root n=ansible | TASK [k8s_master : Starting Systemctl Services] ********************************
+2021-07-01 16:17:21,280 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:17:21,288 p=1435 u=root n=ansible | TASK [k8s_master : Starting Docker Services] ***********************************
+2021-07-01 16:17:23,236 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:17:23,245 p=1435 u=root n=ansible | TASK [k8s_master : Enable kubelet] *********************************************
+2021-07-01 16:17:23,704 p=1435 u=root n=ansible | ok: [100.24.38.7]
+2021-07-01 16:17:23,714 p=1435 u=root n=ansible | TASK [k8s_master : Pull the kubernetes service images - kubeadm] ***************
+2021-07-01 16:17:44,565 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:17:44,573 p=1435 u=root n=ansible | TASK [k8s_master : Initialize the Kubernetes Master - kubeadm init] ************
+2021-07-01 16:18:04,220 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:18:04,229 p=1435 u=root n=ansible | TASK [k8s_master : Create /.kube directory] ************************************
+2021-07-01 16:18:04,813 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:18:04,823 p=1435 u=root n=ansible | TASK [k8s_master : Copy kubernetes admin.conf file to /.kube/] *****************
+2021-07-01 16:18:05,182 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:18:05,191 p=1435 u=root n=ansible | TASK [k8s_master : Change ownership of /.kube/config] **************************
+2021-07-01 16:18:05,521 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:18:05,529 p=1435 u=root n=ansible | TASK [k8s_master : Applying AddOns] ********************************************
+2021-07-01 16:18:06,916 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:18:06,925 p=1435 u=root n=ansible | TASK [k8s_master : Create a token to join the slave nodes] *********************
+2021-07-01 16:18:07,356 p=1435 u=root n=ansible | changed: [100.24.38.7]
+2021-07-01 16:18:07,364 p=1435 u=root n=ansible | TASK [k8s_master : Print the command to join the slave nodes] ******************
+2021-07-01 16:18:07,416 p=1435 u=root n=ansible | ok: [100.24.38.7] => {
+    "join_command.stdout_lines": [
+        "kubeadm join 172.31.19.214:6443 --token eobb0l.mli5zvapwzlmn080 --discovery-token-ca-cert-hash sha256:fb6850ae81e940c294493a42d437ebb32803c8865dc6602bdef2fb8b747a57e0 "
+    ]
+}
+2021-07-01 16:18:15,279 p=1435 u=root n=ansible | PLAY [Configuring Slave] *******************************************************
+2021-07-01 16:18:15,293 p=1435 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2021-07-01 16:18:16,816 p=1435 u=root n=ansible | ok: [54.196.185.119]
+2021-07-01 16:18:16,825 p=1435 u=root n=ansible | TASK [k8s_slave : Install docker] **********************************************
+2021-07-01 16:18:16,873 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:16,881 p=1435 u=root n=ansible | TASK [k8s_slave : Update docker driver to systemd] *****************************
+2021-07-01 16:18:16,928 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:16,936 p=1435 u=root n=ansible | TASK [k8s_slave : Start and Enable docker] *************************************
+2021-07-01 16:18:16,983 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:16,991 p=1435 u=root n=ansible | TASK [k8s_slave : Configure yum for kubernetes] ********************************
+2021-07-01 16:18:17,038 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,046 p=1435 u=root n=ansible | TASK [k8s_slave : Install kubelet, kubeadm and kubectl packages] ***************
+2021-07-01 16:18:17,094 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,102 p=1435 u=root n=ansible | TASK [k8s_slave : Enable kubelet] **********************************************
+2021-07-01 16:18:17,150 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,159 p=1435 u=root n=ansible | TASK [k8s_slave : Install iproute-tc package] **********************************
+2021-07-01 16:18:17,206 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,214 p=1435 u=root n=ansible | TASK [k8s_slave : Copy k8s.conf file for bridging] *****************************
+2021-07-01 16:18:17,263 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,271 p=1435 u=root n=ansible | TASK [k8s_slave : Enabling bridging for kernel in the slave node] **************
+2021-07-01 16:18:17,317 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,326 p=1435 u=root n=ansible | TASK [k8s_slave : Join the slave and master nodes] *****************************
+2021-07-01 16:18:17,372 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,381 p=1435 u=root n=ansible | TASK [k8s_slave : Configure yum for docker] ************************************
+2021-07-01 16:18:17,427 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,436 p=1435 u=root n=ansible | TASK [k8s_slave : Install docker on RedHat] ************************************
+2021-07-01 16:18:17,483 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,492 p=1435 u=root n=ansible | TASK [k8s_slave : Install Python] **********************************************
+2021-07-01 16:18:17,540 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,548 p=1435 u=root n=ansible | TASK [k8s_slave : Install Docker sdk for python] *******************************
+2021-07-01 16:18:17,597 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,606 p=1435 u=root n=ansible | TASK [k8s_slave : Create /etc/docker directory] ********************************
+2021-07-01 16:18:17,653 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,661 p=1435 u=root n=ansible | TASK [k8s_slave : Update docker driver to systemd] *****************************
+2021-07-01 16:18:17,708 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,717 p=1435 u=root n=ansible | TASK [k8s_slave : Start and Enable docker] *************************************
+2021-07-01 16:18:17,765 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,773 p=1435 u=root n=ansible | TASK [k8s_slave : Configure yum for kubernetes] ********************************
+2021-07-01 16:18:17,820 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,829 p=1435 u=root n=ansible | TASK [k8s_slave : Install kubelet, kubeadm and kubectl packages] ***************
+2021-07-01 16:18:17,877 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,886 p=1435 u=root n=ansible | TASK [k8s_slave : Enable kubelet] **********************************************
+2021-07-01 16:18:17,935 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:17,944 p=1435 u=root n=ansible | TASK [k8s_slave : Install iproute-tc package] **********************************
+2021-07-01 16:18:17,992 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:18,001 p=1435 u=root n=ansible | TASK [k8s_slave : Copy k8s.conf file for bridging] *****************************
+2021-07-01 16:18:18,049 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:18,058 p=1435 u=root n=ansible | TASK [k8s_slave : Enabling bridging for kernel in the slave node] **************
+2021-07-01 16:18:18,106 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:18,115 p=1435 u=root n=ansible | TASK [k8s_slave : Join the slave and master nodes] *****************************
+2021-07-01 16:18:18,164 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:18,173 p=1435 u=root n=ansible | TASK [k8s_slave : Add an apt signing key for Docker] ***************************
+2021-07-01 16:18:19,114 p=1435 u=root n=ansible | changed: [54.196.185.119]
+2021-07-01 16:18:19,123 p=1435 u=root n=ansible | TASK [k8s_slave : Add apt repository for stable version of Docker] *************
+2021-07-01 16:18:28,453 p=1435 u=root n=ansible | changed: [54.196.185.119]
+2021-07-01 16:18:28,461 p=1435 u=root n=ansible | TASK [k8s_slave : Install docker and its dependecies] **************************
+2021-07-01 16:18:53,325 p=1435 u=root n=ansible | changed: [54.196.185.119]
+2021-07-01 16:18:53,334 p=1435 u=root n=ansible | TASK [k8s_slave : Changing Docker Driver to systemd] ***************************
+2021-07-01 16:18:53,867 p=1435 u=root n=ansible | changed: [54.196.185.119]
+2021-07-01 16:18:53,875 p=1435 u=root n=ansible | TASK [k8s_slave : Remove swapfile from /etc/fstab] *****************************
+2021-07-01 16:18:54,180 p=1435 u=root n=ansible | ok: [54.196.185.119] => (item=swap)
+2021-07-01 16:18:54,423 p=1435 u=root n=ansible | ok: [54.196.185.119] => (item=none)
+2021-07-01 16:18:54,432 p=1435 u=root n=ansible | TASK [k8s_slave : Disable swap] ************************************************
+2021-07-01 16:18:54,481 p=1435 u=root n=ansible | skipping: [54.196.185.119]
+2021-07-01 16:18:54,489 p=1435 u=root n=ansible | TASK [k8s_slave : Add an apt signing key for Kubernetes] ***********************
+2021-07-01 16:18:55,539 p=1435 u=root n=ansible | changed: [54.196.185.119]
+2021-07-01 16:18:55,547 p=1435 u=root n=ansible | TASK [k8s_slave : Adding apt repository for Kubernetes] ************************
+2021-07-01 16:19:01,696 p=1435 u=root n=ansible | changed: [54.196.185.119]
+2021-07-01 16:19:01,705 p=1435 u=root n=ansible | TASK [k8s_slave : Install Kubernetes binaries] *********************************
+2021-07-01 16:19:19,812 p=1435 u=root n=ansible | changed: [54.196.185.119]
+2021-07-01 16:19:19,820 p=1435 u=root n=ansible | TASK [k8s_slave : Copy k8s.conf file for bridging] *****************************
+2021-07-01 16:19:20,398 p=1435 u=root n=ansible | changed: [54.196.185.119]
+2021-07-01 16:19:20,406 p=1435 u=root n=ansible | TASK [k8s_slave : Starting Docker Services] ************************************
+2021-07-01 16:19:21,867 p=1435 u=root n=ansible | changed: [54.196.185.119]
+2021-07-01 16:19:21,876 p=1435 u=root n=ansible | TASK [k8s_slave : Enable kubelet] **********************************************
+2021-07-01 16:19:22,317 p=1435 u=root n=ansible | ok: [54.196.185.119]
+2021-07-01 16:19:22,326 p=1435 u=root n=ansible | TASK [k8s_slave : Pulling Images] **********************************************
+2021-07-01 16:19:38,294 p=1435 u=root n=ansible | changed: [54.196.185.119]
+2021-07-01 16:19:38,302 p=1435 u=root n=ansible | TASK [k8s_slave : Enabling bridging for kernel in the slave node] **************
+2021-07-01 16:19:38,600 p=1435 u=root n=ansible | changed: [54.196.185.119]
+2021-07-01 16:19:38,609 p=1435 u=root n=ansible | TASK [k8s_slave : Join the slave and master nodes] *****************************
+2021-07-01 16:19:45,146 p=1435 u=root n=ansible | changed: [54.196.185.119]
+2021-07-01 16:19:45,148 p=1435 u=root n=ansible | PLAY RECAP *********************************************************************
+2021-07-01 16:19:45,148 p=1435 u=root n=ansible | 100.24.38.7                : ok=21   changed=17   unreachable=0    failed=0    skipped=36   rescued=0    ignored=0   
+2021-07-01 16:19:45,149 p=1435 u=root n=ansible | 54.196.185.119             : ok=15   changed=12   unreachable=0    failed=0    skipped=25   rescued=0    ignored=0   

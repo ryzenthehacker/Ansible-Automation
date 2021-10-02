@@ -1,0 +1,6 @@
+---
+# vars file for k8s_master
+
+pod_network_cidr: " {{ pod_network_cidr }} "
+owner: " {{ owner }} "
+group: " {{ group }} "

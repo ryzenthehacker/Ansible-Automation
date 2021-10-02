@@ -1,0 +1,20 @@
+2021-06-26 18:30:24,682 p=1129 u=ubuntu n=ansible | PLAY [localhost] ***************************************************************
+2021-06-26 18:30:24,737 p=1129 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************
+2021-06-26 18:30:26,038 p=1129 u=ubuntu n=ansible | ok: [localhost]
+2021-06-26 18:30:26,053 p=1129 u=ubuntu n=ansible | TASK [docker_ubuntu : Ensure group "docker" exists.] ***************************
+2021-06-26 18:30:26,409 p=1129 u=ubuntu n=ansible | ok: [localhost]
+2021-06-26 18:30:26,419 p=1129 u=ubuntu n=ansible | TASK [docker_ubuntu : Ensure user "docker" with group "docker" exists.] ********
+2021-06-26 18:30:26,909 p=1129 u=ubuntu n=ansible | changed: [localhost]
+2021-06-26 18:30:26,919 p=1129 u=ubuntu n=ansible | TASK [docker_ubuntu : Add users "['www-data', 'backup']" to group "docker" if specified.] ***
+2021-06-26 18:30:26,983 p=1129 u=ubuntu n=ansible | skipping: [localhost] => (item=www-data) 
+2021-06-26 18:30:26,984 p=1129 u=ubuntu n=ansible | skipping: [localhost] => (item=backup) 
+2021-06-26 18:30:26,993 p=1129 u=ubuntu n=ansible | TASK [docker_ubuntu : Debian | Installing ['apt-transport-https', 'ca-certificates', 'curl', 'gnupg', 'lsb-release']] ***
+2021-06-26 18:30:33,709 p=1129 u=ubuntu n=ansible | ok: [localhost]
+2021-06-26 18:30:33,716 p=1129 u=ubuntu n=ansible | TASK [docker_ubuntu : Debian | Ensure docker gpg key exists.] ******************
+2021-06-26 18:30:34,864 p=1129 u=ubuntu n=ansible | changed: [localhost]
+2021-06-26 18:30:34,872 p=1129 u=ubuntu n=ansible | TASK [docker_ubuntu : Debian | Adding docker repository.] **********************
+2021-06-26 18:30:40,396 p=1129 u=ubuntu n=ansible | changed: [localhost]
+2021-06-26 18:30:40,405 p=1129 u=ubuntu n=ansible | TASK [docker_ubuntu : Debian | Installing ['docker-ce', 'docker-ce-cli', 'containerd.io']] ***
+2021-06-26 18:30:41,412 p=1129 u=ubuntu n=ansible | ok: [localhost]
+2021-06-26 18:30:41,433 p=1129 u=ubuntu n=ansible | PLAY RECAP *********************************************************************
+2021-06-26 18:30:41,433 p=1129 u=ubuntu n=ansible | localhost                  : ok=7    changed=3    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   

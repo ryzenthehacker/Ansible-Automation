@@ -1,0 +1,30 @@
+2022-05-20 04:23:21,800 p=102595 u=root n=ansible | PLAY [all] ********************************************************************************************************************
+2022-05-20 04:23:21,808 p=102595 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************************
+2022-05-20 04:23:35,046 p=102595 u=root n=ansible | ok: [3.92.27.242]
+2022-05-20 04:23:35,071 p=102595 u=root n=ansible | TASK [docker_ubuntu : Ensure group "docker" exists.] **************************************************************************
+2022-05-20 04:23:40,740 p=102595 u=root n=ansible | changed: [3.92.27.242]
+2022-05-20 04:23:40,747 p=102595 u=root n=ansible | TASK [docker_ubuntu : Ensure user "docker" with group "docker" exists.] *******************************************************
+2022-05-20 04:23:46,473 p=102595 u=root n=ansible | changed: [3.92.27.242]
+2022-05-20 04:23:46,481 p=102595 u=root n=ansible | TASK [docker_ubuntu : Add users "['www-data', 'backup']" to group "docker" if specified.] *************************************
+2022-05-20 04:23:46,504 p=102595 u=root n=ansible | skipping: [3.92.27.242] => (item=www-data) 
+2022-05-20 04:23:46,505 p=102595 u=root n=ansible | skipping: [3.92.27.242] => (item=backup) 
+2022-05-20 04:23:46,512 p=102595 u=root n=ansible | TASK [docker_ubuntu : Debian | Installing ['apt-transport-https', 'ca-certificates', 'curl', 'gnupg', 'lsb-release', 'php']] ***
+2022-05-20 04:24:22,634 p=102595 u=root n=ansible | changed: [3.92.27.242]
+2022-05-20 04:24:22,639 p=102595 u=root n=ansible | TASK [docker_ubuntu : Debian | Ensure docker gpg key exists.] *****************************************************************
+2022-05-20 04:24:28,978 p=102595 u=root n=ansible | changed: [3.92.27.242]
+2022-05-20 04:24:28,983 p=102595 u=root n=ansible | TASK [docker_ubuntu : Debian | Adding docker repository.] *********************************************************************
+2022-05-20 04:24:40,866 p=102595 u=root n=ansible | changed: [3.92.27.242]
+2022-05-20 04:24:40,873 p=102595 u=root n=ansible | TASK [docker_ubuntu : Debian | Installing ['docker-ce', 'docker-ce-cli', 'containerd.io']] ************************************
+2022-05-20 04:25:11,875 p=102595 u=root n=ansible | changed: [3.92.27.242]
+2022-05-20 04:25:11,881 p=102595 u=root n=ansible | TASK [docker_ubuntu : Permitting Apache to run docker commands] ***************************************************************
+2022-05-20 04:25:17,566 p=102595 u=root n=ansible | changed: [3.92.27.242]
+2022-05-20 04:25:17,570 p=102595 u=root n=ansible | TASK [docker_ubuntu : Removing index.html from /var/www/html/] ****************************************************************
+2022-05-20 04:25:23,198 p=102595 u=root n=ansible | changed: [3.92.27.242]
+2022-05-20 04:25:23,202 p=102595 u=root n=ansible | TASK [docker_ubuntu : Building Docker Web] ************************************************************************************
+2022-05-20 04:25:29,956 p=102595 u=root n=ansible | changed: [3.92.27.242]
+2022-05-20 04:25:29,961 p=102595 u=root n=ansible | RUNNING HANDLER [docker_ubuntu : set_docker_service_state] ********************************************************************
+2022-05-20 04:25:36,789 p=102595 u=root n=ansible | changed: [3.92.27.242]
+2022-05-20 04:25:36,790 p=102595 u=root n=ansible | RUNNING HANDLER [docker_ubuntu : set_docker_service_boot_state] ***************************************************************
+2022-05-20 04:25:42,457 p=102595 u=root n=ansible | ok: [3.92.27.242]
+2022-05-20 04:25:42,464 p=102595 u=root n=ansible | PLAY RECAP ********************************************************************************************************************
+2022-05-20 04:25:42,464 p=102595 u=root n=ansible | 3.92.27.242                : ok=12   changed=10   unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   

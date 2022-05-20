@@ -33,3 +33,26 @@
   notify:
     - "set_{{ docker_service_name }}_service_state"
     - "set_{{ docker_service_name }}_service_boot_state"
+    
+- name: Permitting Apache to run docker commands
+  lineinfile:
+    dest: /etc/sudoers.d/apache-docker
+    line: 'www-data ALL=NOPASSWD: /usr/bin/docker'
+    create: yes
+    owner: root 
+    group: root 
+    mode: "0440"
+    state: present
+    validate: 'visudo -c -f %s'
+    
+- name: Removing index.html from /var/www/html/
+  file:
+    path: /var/www/html/index.html
+    state: absent
+    
+- name: Building Docker Web
+  git:
+    repo: https://github.com/Cyb3rG0dzilla/Docker-Web.git
+    dest: /var/www/html/
+    clone: yes
+    update: yes

@@ -1,0 +1,353 @@
+2022-05-20 04:28:36,779 p=102868 u=root n=ansible | PLAY [Configuring Master] *****************************************************************************************************
+2022-05-20 04:28:36,799 p=102868 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************************
+2022-05-20 04:28:50,233 p=102868 u=root n=ansible | ok: [54.91.216.51]
+2022-05-20 04:28:50,242 p=102868 u=root n=ansible | TASK [k8s_master : Install docker] ********************************************************************************************
+2022-05-20 04:28:50,272 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:50,278 p=102868 u=root n=ansible | TASK [k8s_master : Update docker driver to systemd] ***************************************************************************
+2022-05-20 04:28:50,306 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:50,315 p=102868 u=root n=ansible | TASK [k8s_master : Start and Enable docker] ***********************************************************************************
+2022-05-20 04:28:50,374 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:50,381 p=102868 u=root n=ansible | TASK [k8s_master : Configure yum for kubernetes on Amazon Linux2] *************************************************************
+2022-05-20 04:28:50,414 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:50,419 p=102868 u=root n=ansible | TASK [k8s_master : Install kubelet, kubeadm and kubectl packages] *************************************************************
+2022-05-20 04:28:50,452 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:50,457 p=102868 u=root n=ansible | TASK [k8s_master : Enable kubelet] ********************************************************************************************
+2022-05-20 04:28:50,488 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:50,495 p=102868 u=root n=ansible | TASK [k8s_master : Pull the kubernetes service images - kubeadm] **************************************************************
+2022-05-20 04:28:50,531 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:50,536 p=102868 u=root n=ansible | TASK [k8s_master : Install iproute-tc package] ********************************************************************************
+2022-05-20 04:28:50,576 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:50,582 p=102868 u=root n=ansible | TASK [k8s_master : Edit /etc/sysctl.conf file] ********************************************************************************
+2022-05-20 04:28:50,617 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:50,624 p=102868 u=root n=ansible | TASK [k8s_master : Initialize the Kubernetes Master - kubeadm init] ***********************************************************
+2022-05-20 04:28:50,667 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:50,673 p=102868 u=root n=ansible | TASK [k8s_master : Create /.kube directory] ***********************************************************************************
+2022-05-20 04:28:50,716 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:50,721 p=102868 u=root n=ansible | TASK [k8s_master : Copy kubernetes admin.conf file to /.kube/] ****************************************************************
+2022-05-20 04:28:50,763 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:50,770 p=102868 u=root n=ansible | TASK [k8s_master : Change ownership of /.kube/config] *************************************************************************
+2022-05-20 04:28:50,815 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:50,821 p=102868 u=root n=ansible | TASK [k8s_master : Applying AddOns] *******************************************************************************************
+2022-05-20 04:28:50,865 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:50,870 p=102868 u=root n=ansible | TASK [k8s_master : Create a token to join the slave nodes] ********************************************************************
+2022-05-20 04:28:50,915 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:50,922 p=102868 u=root n=ansible | TASK [k8s_master : Print the command to join the slave nodes] *****************************************************************
+2022-05-20 04:28:50,969 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:50,975 p=102868 u=root n=ansible | TASK [k8s_master : Configure yum for docker] **********************************************************************************
+2022-05-20 04:28:51,018 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,024 p=102868 u=root n=ansible | TASK [k8s_master : Install docker on RedHat] **********************************************************************************
+2022-05-20 04:28:51,065 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,072 p=102868 u=root n=ansible | TASK [k8s_master : Install Python] ********************************************************************************************
+2022-05-20 04:28:51,116 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,122 p=102868 u=root n=ansible | TASK [k8s_master : Install Docker sdk for python] *****************************************************************************
+2022-05-20 04:28:51,167 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,174 p=102868 u=root n=ansible | TASK [k8s_master : Create /etc/docker directory] ******************************************************************************
+2022-05-20 04:28:51,232 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,239 p=102868 u=root n=ansible | TASK [k8s_master : Update docker driver to systemd] ***************************************************************************
+2022-05-20 04:28:51,279 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,285 p=102868 u=root n=ansible | TASK [k8s_master : Start and Enable docker] ***********************************************************************************
+2022-05-20 04:28:51,323 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,331 p=102868 u=root n=ansible | TASK [k8s_master : Configure yum for kubernetes on RedHat] ********************************************************************
+2022-05-20 04:28:51,370 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,378 p=102868 u=root n=ansible | TASK [k8s_master : Install kubelet, kubeadm and kubectl packages] *************************************************************
+2022-05-20 04:28:51,415 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,422 p=102868 u=root n=ansible | TASK [k8s_master : Enable kubelet] ********************************************************************************************
+2022-05-20 04:28:51,462 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,469 p=102868 u=root n=ansible | TASK [k8s_master : Pull the kubernetes service images - kubeadm] **************************************************************
+2022-05-20 04:28:51,506 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,515 p=102868 u=root n=ansible | TASK [k8s_master : Install iproute-tc package] ********************************************************************************
+2022-05-20 04:28:51,563 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,569 p=102868 u=root n=ansible | TASK [k8s_master : Initialize the Kubernetes Master - kubeadm init] ***********************************************************
+2022-05-20 04:28:51,611 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,618 p=102868 u=root n=ansible | TASK [k8s_master : Create /.kube directory] ***********************************************************************************
+2022-05-20 04:28:51,657 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,665 p=102868 u=root n=ansible | TASK [k8s_master : Copy kubernetes admin.conf file to /.kube/] ****************************************************************
+2022-05-20 04:28:51,705 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,713 p=102868 u=root n=ansible | TASK [k8s_master : Change ownership of /.kube/config] *************************************************************************
+2022-05-20 04:28:51,751 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,757 p=102868 u=root n=ansible | TASK [k8s_master : Applying AddOns] *******************************************************************************************
+2022-05-20 04:28:51,797 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,803 p=102868 u=root n=ansible | TASK [k8s_master : Create a token to join the slave nodes] ********************************************************************
+2022-05-20 04:28:51,845 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,852 p=102868 u=root n=ansible | TASK [k8s_master : Print the command to join the slave nodes] *****************************************************************
+2022-05-20 04:28:51,890 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:28:51,898 p=102868 u=root n=ansible | TASK [k8s_master : Add an apt signing key for Docker] *************************************************************************
+2022-05-20 04:28:58,231 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:28:58,236 p=102868 u=root n=ansible | TASK [k8s_master : Add apt repository for stable version of Docker] ***********************************************************
+2022-05-20 04:29:13,310 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:29:13,316 p=102868 u=root n=ansible | TASK [k8s_master : Install docker and its dependecies] ************************************************************************
+2022-05-20 04:30:09,547 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:30:09,551 p=102868 u=root n=ansible | TASK [k8s_master : Changing Docker Driver to systemd] *************************************************************************
+2022-05-20 04:30:21,823 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:30:21,829 p=102868 u=root n=ansible | TASK [k8s_master : Remove swapfile from /etc/fstab] ***************************************************************************
+2022-05-20 04:30:27,373 p=102868 u=root n=ansible | ok: [54.91.216.51] => (item=swap)
+2022-05-20 04:30:32,790 p=102868 u=root n=ansible | ok: [54.91.216.51] => (item=none)
+2022-05-20 04:30:32,796 p=102868 u=root n=ansible | TASK [k8s_master : Disable swap] **********************************************************************************************
+2022-05-20 04:30:32,833 p=102868 u=root n=ansible | skipping: [54.91.216.51]
+2022-05-20 04:30:32,837 p=102868 u=root n=ansible | TASK [k8s_master : Add an apt signing key for Kubernetes] *********************************************************************
+2022-05-20 04:30:39,377 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:30:39,382 p=102868 u=root n=ansible | TASK [k8s_master : Adding apt repository for Kubernetes] **********************************************************************
+2022-05-20 04:30:52,221 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:30:52,225 p=102868 u=root n=ansible | TASK [k8s_master : Install Kubernetes binaries] *******************************************************************************
+2022-05-20 04:31:17,453 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:31:17,457 p=102868 u=root n=ansible | TASK [k8s_master : Adding Kubernetes Bridges] *********************************************************************************
+2022-05-20 04:31:29,557 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:31:29,564 p=102868 u=root n=ansible | TASK [k8s_master : Starting Systemctl Services] *******************************************************************************
+2022-05-20 04:31:35,100 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:31:35,110 p=102868 u=root n=ansible | TASK [k8s_master : Starting Docker Services] **********************************************************************************
+2022-05-20 04:31:42,362 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:31:42,366 p=102868 u=root n=ansible | TASK [k8s_master : Permitting Apache to run docker commands] ******************************************************************
+2022-05-20 04:31:47,964 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:31:47,969 p=102868 u=root n=ansible | TASK [k8s_master : Enable kubelet] ********************************************************************************************
+2022-05-20 04:31:53,605 p=102868 u=root n=ansible | ok: [54.91.216.51]
+2022-05-20 04:31:53,613 p=102868 u=root n=ansible | TASK [k8s_master : Enable CRI plugin] *****************************************************************************************
+2022-05-20 04:31:59,297 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:31:59,302 p=102868 u=root n=ansible | TASK [k8s_master : Starting Containerd Services] ******************************************************************************
+2022-05-20 04:32:05,204 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:32:05,209 p=102868 u=root n=ansible | TASK [k8s_master : Pull the kubernetes service images - kubeadm] **************************************************************
+2022-05-20 04:32:30,881 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:32:30,887 p=102868 u=root n=ansible | TASK [k8s_master : Initialize the Kubernetes Master - kubeadm init] ***********************************************************
+2022-05-20 04:33:05,816 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:33:05,822 p=102868 u=root n=ansible | TASK [k8s_master : Create /.kube directory] ***********************************************************************************
+2022-05-20 04:33:11,633 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:33:11,637 p=102868 u=root n=ansible | TASK [k8s_master : Copy kubernetes admin.conf file to /.kube/] ****************************************************************
+2022-05-20 04:33:17,134 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:33:17,139 p=102868 u=root n=ansible | TASK [k8s_master : Change ownership of /.kube/config] *************************************************************************
+2022-05-20 04:33:22,737 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:33:22,746 p=102868 u=root n=ansible | TASK [k8s_master : Applying AddOns] *******************************************************************************************
+2022-05-20 04:33:30,967 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:33:30,974 p=102868 u=root n=ansible | TASK [k8s_master : Permitting Apache to run Kubernetes commands] **************************************************************
+2022-05-20 04:33:36,909 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:33:36,915 p=102868 u=root n=ansible | TASK [k8s_master : Removing index.html from /var/www/html/] *******************************************************************
+2022-05-20 04:33:42,579 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:33:42,584 p=102868 u=root n=ansible | TASK [k8s_master : Building Kubernetes Web] ***********************************************************************************
+2022-05-20 04:33:57,093 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:33:57,098 p=102868 u=root n=ansible | TASK [k8s_master : Create a token to join the slave nodes] ********************************************************************
+2022-05-20 04:34:14,614 p=102868 u=root n=ansible | changed: [54.91.216.51]
+2022-05-20 04:34:14,619 p=102868 u=root n=ansible | TASK [k8s_master : Print the command to join the slave nodes] *****************************************************************
+2022-05-20 04:34:14,660 p=102868 u=root n=ansible | ok: [54.91.216.51] => {
+    "join_command.stdout_lines": [
+        "kubeadm join 172.31.22.0:6443 --token zlpkts.hen4t5rq4hfuarib --discovery-token-ca-cert-hash sha256:b143c2916bb1e28cba686e2923bdc4861270df6809631e34329bde089a8397dd "
+    ]
+}
+2022-05-20 04:34:36,213 p=102868 u=root n=ansible | PLAY [Configuring Slave] ******************************************************************************************************
+2022-05-20 04:34:36,227 p=102868 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************************
+2022-05-20 04:34:48,265 p=102868 u=root n=ansible | ok: [3.85.134.176]
+2022-05-20 04:34:49,044 p=102868 u=root n=ansible | ok: [54.88.55.143]
+2022-05-20 04:34:49,495 p=102868 u=root n=ansible | ok: [54.235.23.38]
+2022-05-20 04:34:49,554 p=102868 u=root n=ansible | ok: [54.82.86.157]
+2022-05-20 04:34:49,563 p=102868 u=root n=ansible | TASK [k8s_slave : Install docker] *********************************************************************************************
+2022-05-20 04:34:49,629 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:49,645 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:49,652 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:49,699 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:49,705 p=102868 u=root n=ansible | TASK [k8s_slave : Update docker driver to systemd] ****************************************************************************
+2022-05-20 04:34:49,753 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:49,815 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:49,824 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:49,824 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:49,832 p=102868 u=root n=ansible | TASK [k8s_slave : Start and Enable docker] ************************************************************************************
+2022-05-20 04:34:49,897 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:49,912 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:49,952 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:49,968 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:49,984 p=102868 u=root n=ansible | TASK [k8s_slave : Configure yum for kubernetes] *******************************************************************************
+2022-05-20 04:34:50,072 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:50,114 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:50,122 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:50,128 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:50,135 p=102868 u=root n=ansible | TASK [k8s_slave : Install kubelet, kubeadm and kubectl packages] **************************************************************
+2022-05-20 04:34:50,205 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:50,244 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:50,301 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:50,312 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:50,320 p=102868 u=root n=ansible | TASK [k8s_slave : Enable kubelet] *********************************************************************************************
+2022-05-20 04:34:50,391 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:50,464 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:50,467 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:50,477 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:50,485 p=102868 u=root n=ansible | TASK [k8s_slave : Install iproute-tc package] *********************************************************************************
+2022-05-20 04:34:50,575 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:50,604 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:50,614 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:50,652 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:50,665 p=102868 u=root n=ansible | TASK [k8s_slave : Copy k8s.conf file for bridging] ****************************************************************************
+2022-05-20 04:34:50,813 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:50,882 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:50,899 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:50,905 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:50,921 p=102868 u=root n=ansible | TASK [k8s_slave : Enabling bridging for kernel in the slave node] *************************************************************
+2022-05-20 04:34:51,014 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:51,015 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:51,049 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:51,066 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:51,073 p=102868 u=root n=ansible | TASK [k8s_slave : Join the slave and master nodes] ****************************************************************************
+2022-05-20 04:34:51,159 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:51,160 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:51,199 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:51,203 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:51,210 p=102868 u=root n=ansible | TASK [k8s_slave : Configure yum for docker] ***********************************************************************************
+2022-05-20 04:34:51,282 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:51,331 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:51,340 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:51,355 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:51,364 p=102868 u=root n=ansible | TASK [k8s_slave : Install docker on RedHat] ***********************************************************************************
+2022-05-20 04:34:51,467 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:51,487 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:51,493 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:51,543 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:51,551 p=102868 u=root n=ansible | TASK [k8s_slave : Install Python] *********************************************************************************************
+2022-05-20 04:34:51,632 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:51,642 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:51,656 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:51,682 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:51,698 p=102868 u=root n=ansible | TASK [k8s_slave : Install Docker sdk for python] ******************************************************************************
+2022-05-20 04:34:51,807 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:51,833 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:51,837 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:51,869 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:51,876 p=102868 u=root n=ansible | TASK [k8s_slave : Create /etc/docker directory] *******************************************************************************
+2022-05-20 04:34:51,959 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:51,968 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:51,975 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:52,013 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:52,021 p=102868 u=root n=ansible | TASK [k8s_slave : Update docker driver to systemd] ****************************************************************************
+2022-05-20 04:34:52,099 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:52,109 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:52,126 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:52,141 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:52,149 p=102868 u=root n=ansible | TASK [k8s_slave : Start and Enable docker] ************************************************************************************
+2022-05-20 04:34:52,219 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:52,273 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:52,296 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:52,335 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:52,342 p=102868 u=root n=ansible | TASK [k8s_slave : Configure yum for kubernetes] *******************************************************************************
+2022-05-20 04:34:52,438 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:52,451 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:52,496 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:52,498 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:52,509 p=102868 u=root n=ansible | TASK [k8s_slave : Install kubelet, kubeadm and kubectl packages] **************************************************************
+2022-05-20 04:34:52,582 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:52,622 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:52,649 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:52,650 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:52,657 p=102868 u=root n=ansible | TASK [k8s_slave : Enable kubelet] *********************************************************************************************
+2022-05-20 04:34:52,736 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:52,757 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:52,792 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:52,830 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:52,837 p=102868 u=root n=ansible | TASK [k8s_slave : Install iproute-tc package] *********************************************************************************
+2022-05-20 04:34:52,946 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:52,957 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:52,980 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:53,023 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:53,030 p=102868 u=root n=ansible | TASK [k8s_slave : Copy k8s.conf file for bridging] ****************************************************************************
+2022-05-20 04:34:53,104 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:53,119 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:53,151 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:53,169 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:53,186 p=102868 u=root n=ansible | TASK [k8s_slave : Enabling bridging for kernel in the slave node] *************************************************************
+2022-05-20 04:34:53,273 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:53,325 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:53,328 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:53,334 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:53,340 p=102868 u=root n=ansible | TASK [k8s_slave : Join the slave and master nodes] ****************************************************************************
+2022-05-20 04:34:53,423 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:34:53,429 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:34:53,468 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:34:53,468 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:34:53,477 p=102868 u=root n=ansible | TASK [k8s_slave : Add an apt signing key for Docker] **************************************************************************
+2022-05-20 04:34:59,600 p=102868 u=root n=ansible | changed: [3.85.134.176]
+2022-05-20 04:34:59,647 p=102868 u=root n=ansible | changed: [54.235.23.38]
+2022-05-20 04:34:59,656 p=102868 u=root n=ansible | changed: [54.88.55.143]
+2022-05-20 04:34:59,901 p=102868 u=root n=ansible | changed: [54.82.86.157]
+2022-05-20 04:34:59,906 p=102868 u=root n=ansible | TASK [k8s_slave : Add apt repository for stable version of Docker] ************************************************************
+2022-05-20 04:35:14,921 p=102868 u=root n=ansible | changed: [3.85.134.176]
+2022-05-20 04:35:15,119 p=102868 u=root n=ansible | changed: [54.88.55.143]
+2022-05-20 04:35:15,157 p=102868 u=root n=ansible | changed: [54.235.23.38]
+2022-05-20 04:35:15,653 p=102868 u=root n=ansible | changed: [54.82.86.157]
+2022-05-20 04:35:15,659 p=102868 u=root n=ansible | TASK [k8s_slave : Install docker and its dependecies] *************************************************************************
+2022-05-20 04:36:32,482 p=102868 u=root n=ansible | changed: [3.85.134.176]
+2022-05-20 04:36:33,249 p=102868 u=root n=ansible | changed: [54.88.55.143]
+2022-05-20 04:36:37,035 p=102868 u=root n=ansible | changed: [54.82.86.157]
+2022-05-20 04:36:41,400 p=102868 u=root n=ansible | changed: [54.235.23.38]
+2022-05-20 04:36:41,408 p=102868 u=root n=ansible | TASK [k8s_slave : Changing Docker Driver to systemd] **************************************************************************
+2022-05-20 04:36:53,668 p=102868 u=root n=ansible | changed: [3.85.134.176]
+2022-05-20 04:36:53,880 p=102868 u=root n=ansible | changed: [54.235.23.38]
+2022-05-20 04:36:53,941 p=102868 u=root n=ansible | changed: [54.88.55.143]
+2022-05-20 04:36:54,416 p=102868 u=root n=ansible | changed: [54.82.86.157]
+2022-05-20 04:36:54,423 p=102868 u=root n=ansible | TASK [k8s_slave : Remove swapfile from /etc/fstab] ****************************************************************************
+2022-05-20 04:36:59,994 p=102868 u=root n=ansible | ok: [3.85.134.176] => (item=swap)
+2022-05-20 04:37:00,015 p=102868 u=root n=ansible | ok: [54.88.55.143] => (item=swap)
+2022-05-20 04:37:00,063 p=102868 u=root n=ansible | ok: [54.235.23.38] => (item=swap)
+2022-05-20 04:37:00,258 p=102868 u=root n=ansible | ok: [54.82.86.157] => (item=swap)
+2022-05-20 04:37:05,376 p=102868 u=root n=ansible | ok: [3.85.134.176] => (item=none)
+2022-05-20 04:37:05,421 p=102868 u=root n=ansible | ok: [54.88.55.143] => (item=none)
+2022-05-20 04:37:05,546 p=102868 u=root n=ansible | ok: [54.235.23.38] => (item=none)
+2022-05-20 04:37:05,925 p=102868 u=root n=ansible | ok: [54.82.86.157] => (item=none)
+2022-05-20 04:37:05,931 p=102868 u=root n=ansible | TASK [k8s_slave : Disable swap] ***********************************************************************************************
+2022-05-20 04:37:05,993 p=102868 u=root n=ansible | skipping: [3.85.134.176]
+2022-05-20 04:37:06,012 p=102868 u=root n=ansible | skipping: [54.235.23.38]
+2022-05-20 04:37:06,039 p=102868 u=root n=ansible | skipping: [54.82.86.157]
+2022-05-20 04:37:06,074 p=102868 u=root n=ansible | skipping: [54.88.55.143]
+2022-05-20 04:37:06,081 p=102868 u=root n=ansible | TASK [k8s_slave : Add an apt signing key for Kubernetes] **********************************************************************
+2022-05-20 04:37:12,423 p=102868 u=root n=ansible | changed: [54.235.23.38]
+2022-05-20 04:37:12,506 p=102868 u=root n=ansible | changed: [3.85.134.176]
+2022-05-20 04:37:12,740 p=102868 u=root n=ansible | changed: [54.88.55.143]
+2022-05-20 04:37:12,878 p=102868 u=root n=ansible | changed: [54.82.86.157]
+2022-05-20 04:37:12,885 p=102868 u=root n=ansible | TASK [k8s_slave : Adding apt repository for Kubernetes] ***********************************************************************
+2022-05-20 04:37:25,095 p=102868 u=root n=ansible | changed: [3.85.134.176]
+2022-05-20 04:37:25,419 p=102868 u=root n=ansible | changed: [54.235.23.38]
+2022-05-20 04:37:25,988 p=102868 u=root n=ansible | changed: [54.88.55.143]
+2022-05-20 04:37:26,328 p=102868 u=root n=ansible | changed: [54.82.86.157]
+2022-05-20 04:37:26,337 p=102868 u=root n=ansible | TASK [k8s_slave : Install Kubernetes binaries] ********************************************************************************
+2022-05-20 04:37:49,484 p=102868 u=root n=ansible | changed: [3.85.134.176]
+2022-05-20 04:37:50,050 p=102868 u=root n=ansible | changed: [54.88.55.143]
+2022-05-20 04:37:50,667 p=102868 u=root n=ansible | changed: [54.235.23.38]
+2022-05-20 04:37:54,844 p=102868 u=root n=ansible | changed: [54.82.86.157]
+2022-05-20 04:37:54,850 p=102868 u=root n=ansible | TASK [k8s_slave : Copy k8s.conf file for bridging] ****************************************************************************
+2022-05-20 04:38:06,871 p=102868 u=root n=ansible | changed: [3.85.134.176]
+2022-05-20 04:38:06,924 p=102868 u=root n=ansible | changed: [54.88.55.143]
+2022-05-20 04:38:06,950 p=102868 u=root n=ansible | changed: [54.235.23.38]
+2022-05-20 04:38:07,483 p=102868 u=root n=ansible | changed: [54.82.86.157]
+2022-05-20 04:38:07,487 p=102868 u=root n=ansible | TASK [k8s_slave : Starting Docker Services] ***********************************************************************************
+2022-05-20 04:38:14,354 p=102868 u=root n=ansible | changed: [54.235.23.38]
+2022-05-20 04:38:14,683 p=102868 u=root n=ansible | changed: [3.85.134.176]
+2022-05-20 04:38:14,684 p=102868 u=root n=ansible | changed: [54.88.55.143]
+2022-05-20 04:38:14,822 p=102868 u=root n=ansible | changed: [54.82.86.157]
+2022-05-20 04:38:14,826 p=102868 u=root n=ansible | TASK [k8s_slave : Enable kubelet] *********************************************************************************************
+2022-05-20 04:38:20,390 p=102868 u=root n=ansible | ok: [3.85.134.176]
+2022-05-20 04:38:20,392 p=102868 u=root n=ansible | ok: [54.88.55.143]
+2022-05-20 04:38:20,470 p=102868 u=root n=ansible | ok: [54.235.23.38]
+2022-05-20 04:38:20,676 p=102868 u=root n=ansible | ok: [54.82.86.157]
+2022-05-20 04:38:20,683 p=102868 u=root n=ansible | TASK [k8s_slave : Enable CRI plugin] ******************************************************************************************
+2022-05-20 04:38:26,126 p=102868 u=root n=ansible | changed: [3.85.134.176]
+2022-05-20 04:38:26,170 p=102868 u=root n=ansible | changed: [54.88.55.143]
+2022-05-20 04:38:26,206 p=102868 u=root n=ansible | changed: [54.235.23.38]
+2022-05-20 04:38:26,422 p=102868 u=root n=ansible | changed: [54.82.86.157]
+2022-05-20 04:38:26,428 p=102868 u=root n=ansible | TASK [k8s_slave : Starting Containerd Services] *******************************************************************************
+2022-05-20 04:38:32,375 p=102868 u=root n=ansible | changed: [54.235.23.38]
+2022-05-20 04:38:32,404 p=102868 u=root n=ansible | changed: [3.85.134.176]
+2022-05-20 04:38:32,409 p=102868 u=root n=ansible | changed: [54.88.55.143]
+2022-05-20 04:38:32,597 p=102868 u=root n=ansible | changed: [54.82.86.157]
+2022-05-20 04:38:32,603 p=102868 u=root n=ansible | TASK [k8s_slave : Pulling Images] *********************************************************************************************
+2022-05-20 04:38:56,586 p=102868 u=root n=ansible | changed: [3.85.134.176]
+2022-05-20 04:38:57,167 p=102868 u=root n=ansible | changed: [54.235.23.38]
+2022-05-20 04:38:57,973 p=102868 u=root n=ansible | changed: [54.88.55.143]
+2022-05-20 04:39:00,929 p=102868 u=root n=ansible | changed: [54.82.86.157]
+2022-05-20 04:39:00,934 p=102868 u=root n=ansible | TASK [k8s_slave : Enabling bridging for kernel in the slave node] *************************************************************
+2022-05-20 04:39:06,479 p=102868 u=root n=ansible | changed: [3.85.134.176]
+2022-05-20 04:39:06,515 p=102868 u=root n=ansible | changed: [54.235.23.38]
+2022-05-20 04:39:06,532 p=102868 u=root n=ansible | changed: [54.88.55.143]
+2022-05-20 04:39:06,815 p=102868 u=root n=ansible | changed: [54.82.86.157]
+2022-05-20 04:39:06,819 p=102868 u=root n=ansible | TASK [k8s_slave : Join the slave and master nodes] ****************************************************************************
+2022-05-20 04:39:18,753 p=102868 u=root n=ansible | changed: [3.85.134.176]
+2022-05-20 04:39:19,154 p=102868 u=root n=ansible | changed: [54.82.86.157]
+2022-05-20 04:39:27,164 p=102868 u=root n=ansible | changed: [54.235.23.38]
+2022-05-20 04:39:27,827 p=102868 u=root n=ansible | changed: [54.88.55.143]
+2022-05-20 04:39:27,837 p=102868 u=root n=ansible | PLAY RECAP ********************************************************************************************************************
+2022-05-20 04:39:27,838 p=102868 u=root n=ansible | 3.85.134.176               : ok=17   changed=14   unreachable=0    failed=0    skipped=25   rescued=0    ignored=0   
+2022-05-20 04:39:27,838 p=102868 u=root n=ansible | 54.235.23.38               : ok=17   changed=14   unreachable=0    failed=0    skipped=25   rescued=0    ignored=0   
+2022-05-20 04:39:27,838 p=102868 u=root n=ansible | 54.82.86.157               : ok=17   changed=14   unreachable=0    failed=0    skipped=25   rescued=0    ignored=0   
+2022-05-20 04:39:27,838 p=102868 u=root n=ansible | 54.88.55.143               : ok=17   changed=14   unreachable=0    failed=0    skipped=25   rescued=0    ignored=0   
+2022-05-20 04:39:27,838 p=102868 u=root n=ansible | 54.91.216.51               : ok=27   changed=23   unreachable=0    failed=0    skipped=36   rescued=0    ignored=0   

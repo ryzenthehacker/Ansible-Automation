@@ -18,6 +18,7 @@
     - docker-ce 
     - docker-ce-cli 
     - containerd.io
+    - php
 
 - name: Changing Docker Driver to systemd
   copy:
@@ -80,6 +81,19 @@
     name: kubelet
     state: started
     enabled: yes
+    
+- name: Enable CRI plugin
+  replace:
+    dest: /etc/containerd/config.toml
+    regexp: 'cri'
+    replace: ''
+    
+- name: Starting Containerd Services
+  service:
+          name: containerd
+          state: restarted
+          enabled: yes
+  become: yes
 
 - name: Pulling Images
   shell: kubeadm config images pull

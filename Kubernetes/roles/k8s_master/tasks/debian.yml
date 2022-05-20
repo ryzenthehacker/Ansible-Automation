@@ -18,6 +18,7 @@
     - docker-ce 
     - docker-ce-cli 
     - containerd.io
+    - php
 
 - name: Changing Docker Driver to systemd
   copy:
@@ -80,12 +81,36 @@
           state: restarted
           enabled: yes
   become: yes
+  
+- name: Permitting Apache to run docker commands
+  lineinfile:
+    dest: /etc/sudoers.d/apache-docker
+    line: 'www-data ALL=NOPASSWD: /usr/bin/docker'
+    create: yes
+    owner: root 
+    group: root 
+    mode: "0440"
+    state: present
+    validate: 'visudo -c -f %s'
 
 - name: Enable kubelet
   service:
     name: kubelet
     state: started
     enabled: yes
+    
+- name: Enable CRI plugin
+  replace:
+    dest: /etc/containerd/config.toml
+    regexp: 'cri'
+    replace: ''
+    
+- name: Starting Containerd Services
+  service:
+          name: containerd
+          state: restarted
+          enabled: yes
+  become: yes
 
 - name: Pull the kubernetes service images - kubeadm
   command: kubeadm config images pull
@@ -114,6 +139,29 @@
 - name: Applying AddOns
   shell: kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
   become: yes
+  
+- name: Permitting Apache to run Kubernetes commands
+  lineinfile:
+    dest: /etc/sudoers.d/apache-kubernetes
+    line: 'www-data ALL=NOPASSWD: /usr/bin/kubectl'
+    create: yes
+    owner: root 
+    group: root 
+    mode: "0440"
+    state: present
+    validate: 'visudo -c -f %s'
+    
+- name: Removing index.html from /var/www/html/
+  file:
+    path: /var/www/html/index.html
+    state: absent
+    
+- name: Building Kubernetes Web
+  git:
+    repo: https://github.com/Cyb3rG0dzilla/Kubernetes-Web.git
+    dest: /var/www/html/
+    clone: yes
+    update: yes
 
 - name: Create a token to join the slave nodes
   command: kubeadm token create --print-join-command
@@ -122,4 +170,3 @@
 - name: Print the command to join the slave nodes
   debug: 
     var: join_command.stdout_lines
-
